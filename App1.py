@@ -1,4 +1,6 @@
 #From https://towardsdatascience.com/create-and-deploy-a-simple-web-application-with-flask-and-heroku-103d867298eb
+# Heroku needs to have a requirements.txt file or setup.py file. Don't forget to add gunicorn to them
+#  and then make the procfile "web: gunicorn where_app_lives.py:app"
 
 
 from flask import Flask, render_template
